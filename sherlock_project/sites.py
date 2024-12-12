@@ -206,8 +206,7 @@ class SitesInformation:
         Return Value:
         List of strings containing names of sites.
         """
-
-        return sorted([site.name for site in self], key=str.lower)
+        return sorted(self.sites, key=str.lower)
 
     def __iter__(self):
         """Iterator For Object.
